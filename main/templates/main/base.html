@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+    <!-- Add your CSS links, meta tags, or any other head elements here -->
+<!-- Bootstrap CSS link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Font Awesome CSS link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha384-kvzZZD/Y/Z9ey8vJ8QEbbHRan6L4blH5iSvNt5xZ9x4La4M4pBHTPsbIyqU5Bhl" crossorigin="anonymous">
+<style>
+
+    
+
+        footer {
+            background-color: #343a40;
+            /* Dark Gray */
+            color: #fff;
+            /* White text */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            /* Adjust padding as needed */
+        }
+
+        .footer-icons a {
+            color: #fff;
+            /* White icons */
+            margin-right: 10px;
+        }
+          /* Footer */
+        
+
+        /* Make the footer responsive */
+        @media (max-width: 767px) {
+            footer {
+                position: relative;
+            }
+        }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+        <a class="navbar-brand" href="#">Palace Hotel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div height=60px class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#welcome">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#booking">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#blogs">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    <!-- This is where the content of each page will go -->
+    {% endblock %}
+
+    <!-- Add your JavaScript links or scripts here if needed -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Social Media</h5>
+                    <div class="footer-icons">
+                        <a href="#" class="fab fa-facebook"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Privacy Policy</h5>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Email: <a href="mailto:joeljuma0020@gmail.com">joeljuma0020@gmail.com</a></p>
+                    <p>You can call us at 0799304451</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and Popper.js (Add these scripts before the closing </body> tag) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UoMbU7ZRmyRS5H8ApxmPcsOV1cnr5tV/3Ljj4dTHwyj4qDlYgEMqIbxAuQz1Dp7J"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
